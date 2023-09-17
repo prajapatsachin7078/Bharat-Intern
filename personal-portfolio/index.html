@@ -6,7 +6,9 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3476/3476457.png" type="image/x-icon">
+ 
 </head>
 <body>
 
@@ -14,7 +16,7 @@
         <a href="#" class="logo">Portfolio</a>
         <nav class="navbar">
             <a data-target="home" href="#home" class="active" styles="--i:1;">Home</a>
-            <a data-target="about" href="#about" styles="--i:2;">Abut</a>
+            <a data-target="about" href="#about" styles="--i:2;">About</a>
             <a data-target="skills" href="#skills" styles="--i:3;">Skills</a>
             <a data-target="portfolio" href="#portfolio"styles="--i:4;">Portfolio</a>
             <a data-target="contact" href="#contact"styles="--i:5;">Contact</a>
@@ -31,7 +33,6 @@
         <div class="home-content">
             <h1>Hi, I'm Sachin Prajapati</h1>
             <h3>Frontend Web Developer</h3>
-            <p>I'm passionate about creating beautiful and user-friendly websites that make a positive impact. With expertise in HTML, CSS, and JavaScript, I bring your ideas to life by crafting responsive and interactive web experiences. Let's work together to build a stunning online presence!</p>
             <a href="#" class="btn">Hire Me</a>
         </div>
         
@@ -40,119 +41,134 @@
                 <span></span>
                 <span></span>
                 <div class="image">
-
-                    <img src="my-img.png" alt="akjlksdfja">
+                    <img src="./Images/my-img.png" alt="akjlksdfja">
                 </div>
             </div>
         </div>
     </section>
-    <section class="home" id = "about">
+    <hr>
+    <section class="about" id = "about">
+        <div class="head-title">
+            <h1>About Me</h1>
+        </div>
+        <div class="about-content">
+            <p>I'm passionate about creating beautiful and user-friendly websites that make a positive impact. With expertise in HTML, CSS, JavaScript, Bootstrap, and React, I have a comprehensive toolkit to transform your digital vision into reality.</p>
+
+            <h3>What I Offer</h3>
+            <ul>
+                <li>Rapid prototyping of responsive and mobile-first designs using Bootstrap.</li>
+                <li>Building dynamic and interactive web applications with React.</li>
+                <li>Enhancing user engagement and online experiences.</li>
+                <li>Collaborating to craft an impressive online presence.</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="skills" id = "skills">
+        <div class="head-title">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="HTML Icon">
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%">75%</div>
+                </div>
+                <p class="skill-name">HTML</p>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS Icon">
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%">75%</div>
+                </div>
+                <p class="skill-name">CSS</p>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript Icon">
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 50%">50%</div>
+                </div>
+                <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React Icon">
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 50%">50%</div>
+                </div>
+                <p class="skill-name">React</p>
+            </div>
+        </div>
+        
+            
+    </section>
+    <hr>
+    <section class="portfolio" id="portfolio">
+        <div class="head-title">
+            <h1>Projects</h1>
+        </div>
+        <div class="portfolio-container">
+            <div class="project">
+                <div class="project-img">
+                    <img src="./Images/portfolio.png" alt="Personal Portfolio">
+                </div>
+                <div class="project-title">Personal Portfolio</div>
+                <div class="project-description">My personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.</div>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="./Images/password-gen.png" alt="Password Generator">
+                </div>
+                <div class="project-title">Password Generator</div>
+                <div class="project-description">A simple password generator created with HTML, CSS, and JavaScript to generate strong and secure passwords.</div>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="https://imgs.search.brave.com/ds0ksghQAWn24f5B134P9uvHrtEZzPvccvutUl4UuMk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzU4LzI0LzY0/LzM2MF9GXzQ1ODI0/NjQ0Ml9BY1cxcUpn/d1FBSjJaVk5HOVZj/QkVFR0tBVDRKQWNh/bi5qcGc" alt="Temperature Convertor">
+                </div>
+                <div class="project-title">Temperature Converter</div>
+                <div class="project-description">A simple temperature converter implemented with HTML, CSS, and JavaScript to convert between Celsius and Fahrenheit.</div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    <section class="contact-us" id = "contact">
+        <div class="head-title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <button class ='btn' type="submit">Subscribe</button>
+            </form>
+        </div>
+        
         <div class="home-sci">
             <a href="#"><i class='bx bxl-facebook'></i></a>
             <a href="#"><i class='bx bxl-twitter' ></i></a>
             <a href="#"><i class='bx bxl-linkedin' ></i></a>
             <a href="#"><i class='bx bxl-github' ></i></a>
 
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm Sachin Prajapati</h1>
-            <h3>Frontend Web Developer</h3>
-            <p>I'm passionate about creating beautiful and user-friendly websites that make a positive impact. With expertise in HTML, CSS, and JavaScript, I bring your ideas to life by crafting responsive and interactive web experiences. Let's work together to build a stunning online presence!</p>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-        
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-
-                    <img src="my-img.png" alt="akjlksdfja">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="home" id = "skills">
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
-
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm Sachin Prajapati</h1>
-            <h3>Frontend Web Developer</h3>
-            <p>I'm passionate about creating beautiful and user-friendly websites that make a positive impact. With expertise in HTML, CSS, and JavaScript, I bring your ideas to life by crafting responsive and interactive web experiences. Let's work together to build a stunning online presence!</p>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-        
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-
-                    <img src="my-img.png" alt="akjlksdfja">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="home" id = "portfolio">
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
-
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm Sachin Prajapati</h1>
-            <h3>Frontend Web Developer</h3>
-            <p>I'm passionate about creating beautiful and user-friendly websites that make a positive impact. With expertise in HTML, CSS, and JavaScript, I bring your ideas to life by crafting responsive and interactive web experiences. Let's work together to build a stunning online presence!</p>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-        
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-
-                    <img src="my-img.png" alt="akjlksdfja">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="home" id = "contact">
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
-
-        </div>
-        <div class="home-content">
-            <h1>Hi, I'm Sachin Prajapati</h1>
-            <h3>Frontend Web Developer</h3>
-            <p>I'm passionate about creating beautiful and user-friendly websites that make a positive impact. With expertise in HTML, CSS, and JavaScript, I bring your ideas to life by crafting responsive and interactive web experiences. Let's work together to build a stunning online presence!</p>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-        
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-
-                    <img src="my-img.png" alt="akjlksdfja">
-                </div>
-            </div>
         </div>
     </section>
 
     <script src="index.js">
+        
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     
 </body>
 </html>
