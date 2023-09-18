@@ -12,16 +12,25 @@
 </head>
 <body>
 
-    <header class ='header'>
-        <a href="#" class="logo">Sachin's Portfolio</a>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <div class="menu-btn" onclick="toggleNavMenu()">&#9776;</div>
         <nav class="navbar">
-            <a data-target="home" href="#home" class="active" styles="--i:1;">Home</a>
-            <a data-target="about" href="#about" styles="--i:2;">About</a>
-            <a data-target="skills" href="#skills" styles="--i:3;">Skills</a>
-            <a data-target="portfolio" href="#portfolio"styles="--i:4;">Projects</a>
-            <a data-target="contact" href="#contact"styles="--i:5;">Contact</a>
+            <a data-target="home" href="#home" class="active" style="--i:1;">Home</a>
+            <a data-target="about" href="#about" style="--i:2;">About</a>
+            <a data-target="skills" href="#skills" style="--i:3;">Skills</a>
+            <a data-target="portfolio" href="#portfolio" style="--i:4;">Projects</a>
+            <a data-target="contact" href="#contact" style="--i:5;">Contact</a>
+        </nav>
+        <nav id="navbar">
+            <a data-target="home" href="#home" class="active" style="--i:1;">Home</a>
+            <a data-target="about" href="#about" style="--i:2;">About</a>
+            <a data-target="skills" href="#skills" style="--i:3;">Skills</a>
+            <a data-target="portfolio" href="#portfolio" style="--i:4;">Projects</a>
+            <a data-target="contact" href="#contact" style="--i:5;">Contact</a>
         </nav>
     </header>
+    
     <section class="home" id = "home">
         <div class="home-sci">
             <a href="#"><i class='bx bxl-facebook'></i></a>

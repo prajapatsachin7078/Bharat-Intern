@@ -33,8 +33,34 @@ body{
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
+.menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Styles for Active Dropdown */
+.active-dropdown {
+    display: flex;
+}
+#navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #0c1022;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
 
-.navbar a {
+#navbar a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+#navbar a, .navbar a {
     display: inline-block;
     font-size: 18px;
     color: #fff;
@@ -45,24 +71,30 @@ body{
 }
 
 /* Apply animation delay to individual navbar items */
-.navbar a:nth-child(1) {
+.navbar a:nth-child(1), #navbar a:nth-child(1){
     animation-delay: 0.2s;
 }
 
-.navbar a:nth-child(2) {
+.navbar a:nth-child(2), #navbar a:nth-child(2) {
     animation-delay: 0.4s;
 }
-.navbar a:nth-child(3) {
+.navbar a:nth-child(3), #navbar a:nth-child(3) {
     animation-delay: 0.6s;
 }
-.navbar a:nth-child(4) {
+.navbar a:nth-child(4), #navbar a:nth-child(4) {
     animation-delay: 0.8s;
 }
-.navbar a:nth-child(5) {
+.navbar a:nth-child(5), #navbar a:nth-child(5) {
     animation-delay: 1s;
 }
 .navbar a.active,
 .navbar a:hover {
+    background: linear-gradient(45deg,#f06,rgb(9, 184, 243));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#navbar a.active,
+#navbar a:hover {
     background: linear-gradient(45deg,#f06,rgb(9, 184, 243));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -279,6 +311,7 @@ body{
     justify-content: space-between;
     flex-direction: column;
     padding: 80px 10% 0;
+    
 }
 .head-title h1{
     font-size: 2.2rem;
@@ -291,6 +324,7 @@ body{
     margin: 20px;
     line-height: 1.2;
     color: gainsboro;
+    overflow-y: auto;
 }
 
 .about-content h3 {
@@ -403,11 +437,15 @@ hr{
     padding: 0 10% 0;
 }
 
+/* For laptop and larger screens */
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 20px;
 }
+
+
+
 
 .project {
     background-color: #0c1022;
@@ -494,12 +532,46 @@ hr{
     margin-bottom: 20px;
 }
 
+/* MEDIA QUERY */
+/* For mobile screens */
+@media (max-width: 768px) {
+    .header{
+        position: fixed;
+    }
+    .home-img{
+        display: none;
+    }
+    .home{
+        height: 80vh;
+    }
 
+    .home-content{
+        margin-left: 25px;
+    }
+    .about{
+        height: 110vh;
+        justify-content: space-evenly;
 
-
-
-
-
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .header{
+        position: fixed;
+    }
+    .portfolio{
+        height: 130vh;
+    } .skills{
+        height: 120vh;
+    }
+    .portfolio-container {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+}
 
 
 /* KEYFRAMS ANIMATION */
