@@ -478,6 +478,11 @@ hr{
     color: #fff;
     font-size: 16px;
 }
+.footer-link {
+    border-bottom: 2px solid #f06; /* Set the border to transparent initially */
+    margin-bottom: 20px;
+}
+
 
 
 
