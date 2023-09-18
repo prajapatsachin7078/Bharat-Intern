@@ -11,7 +11,7 @@ body{
      color: #fff;
 }
 .header{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left:0;
     width: 100%;
@@ -273,18 +273,16 @@ body{
 
 .about{
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     display:flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     padding: 80px 10% 0;
 }
-
-.head-title{
-    margin-bottom: 1rem;
-}
 .head-title h1{
     font-size: 2.2rem;
+    margin-top: -30px;
     color: #fff;
     z-index: -1000;
 }
@@ -327,7 +325,7 @@ body{
 }
 .skills{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -397,7 +395,7 @@ hr{
 
 .portfolio{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -447,7 +445,7 @@ hr{
 
 .contact-us{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -463,11 +461,11 @@ hr{
     margin: 20px;
 }
 .contact-form {
-    /* background-color: #000; */
+    background-color: #000;
     width: 100%;
     padding: 30px;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .contact-form form {
